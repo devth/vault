@@ -1,9 +1,9 @@
 # Docker file to run Hashicorp Vault (vaultproject.io)
 
-FROM alpine:latest
-MAINTAINER Derek Chamorro <therandomsecurityguy@gmail.com>
+FROM alpine:3.4
+MAINTAINER Trevor Hartman <trevorhartman@gmail.com>
 
-ENV VERSION 0.5.3
+ENV VERSION 0.6.0
 
 ADD https://releases.hashicorp.com/vault/${VERSION}/vault_${VERSION}_linux_amd64.zip /tmp/
 ADD https://releases.hashicorp.com/vault/${VERSION}/vault_${VERSION}_SHA256SUMS      /tmp/
